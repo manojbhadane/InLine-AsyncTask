@@ -1,6 +1,7 @@
 # InLine-AsyncTask
 
 1. The Basic
+```
 new AsyncTask<Void, Void, Void>() {
         protected void onPreExecute() {
                 // Pre Code
@@ -13,9 +14,10 @@ new AsyncTask<Void, Void, Void>() {
                 // Post Code
         }
 }.execute();
-
+```
 
 2. Return msg from doInBackground to onPostExecute
+```
 new AsyncTask<Void, Void, String>() {
         protected String doInBackground(Void... params) {
                 return "message";
@@ -25,3 +27,4 @@ new AsyncTask<Void, Void, String>() {
               Log.e("TAG",msg) 
         }
 }.execute();
+```
